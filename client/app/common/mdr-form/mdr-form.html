@@ -1,0 +1,8 @@
+<form name="$ctrl.form"
+      ng-class="::$ctrl.config.form.className"
+      md-theme="{{ ::$ctrl.config.form.theme }}">
+    <mdr-fieldset ng-repeat="fieldset in $ctrl.config.form.fieldsets track by $index"
+                  fieldset="fieldset"
+                  form="$ctrl.form">
+    </mdr-fieldset>
+</form>

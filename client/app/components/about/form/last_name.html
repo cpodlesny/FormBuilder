@@ -1,0 +1,7 @@
+<label>
+    {{ ::$parent.field.label }}
+    <input type="{{ ::$parent.field.type }}"
+           name="{{ ::$parent.field.name}}"
+           ng-model="$parent.field.ngModel"
+           ng-change="::$parent.field.ngChange({ field: field, form: $ctrl.form })">
+</label>

@@ -1,0 +1,7 @@
+<label ng-bind="::$parent.field.label"></label>
+<md-checkbox type="{{ ::$parent.field.type }}"
+             name="{{ ::$parent.field.name}}"
+             ng-class="::$parent.className"
+             ng-model="$parent.field.ngModel"
+             ng-change="::$parent.field.ngChange({ field: field, form: $ctrl.form })">
+</md-checkbox>
